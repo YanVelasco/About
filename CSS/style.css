@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+.cabecalho{
+    padding: 2% 0 0 15%;
+}
+
+
+.cabecalho__menu--link{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #22D4FD;
+    text-decoration: none;
+}
+
+.titulo-destaque{
+    color: #22D4FD;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.container__principal{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px; /*espaço entre os filhos é colocado no elemento pai*/
+    
+}
+.container__secao{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container__secao--titulo{
+    font-size: 2.5rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.container__secao--paragrafo{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.containe__botao{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.containe__botao--link{
+    background-color: #000000;
+    border: 1px solid #22D4FD;
+    width: 70%;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    margin-top: 25px;
+    flex-grow: 1;
+    text-decoration: none;
+    color: #F6F6F6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imagem{
+    width: 50%;
+    border: 2px solid #22D4FD;
+    border-radius: 36px;
+}
+
+.rodape{
+    text-align: center;
+    background-color: #22D4FD;
+    height: 45px;
+    font-size: 1.5rem;
+    color: #000000;
+    font-family: 'Krona One', sans-serif;
+}
+/* mobile */
+@media (max-width: 1200px) {
+    .cabecalho{
+        padding: 10%; 
+    }
+    .cabecalho__menu{
+        justify-content: center;/*alinha produtos que estão com flexbox*/
+    }
+    .container__principal{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .container__secao{
+         width: auto;/*largura utilizada para layouts responsivos*/
+    }
+}
